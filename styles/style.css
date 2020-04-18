@@ -55,9 +55,6 @@ hr{
     height: 1em;
     vertical-align: -0.05em;
   }
-#map{
-    align-content: center;
-}
 a:link{
     color: black;
 }
@@ -73,8 +70,17 @@ a:hover{
 a:active{
     color: teal;
 }
+iframe{
+    margin-left: auto;
+    margin-right: auto;
+}
+#iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .row > .column {
-  padding: 0 8px;
+  padding: 0 0px;
 }
 
 .row:after {
