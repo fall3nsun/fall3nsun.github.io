@@ -23,25 +23,68 @@
 			<strong><a href="https://www.ritterburg.at">Burg Lockenhaus</a></strong> statt.
 			F&uuml;rs leibliche Wohl sorgt die <strong><a href="https://www.burgtaverne-lockenhaus.at">Burgtaverne</a></strong>, 
 			f&uuml;r die Unterhaltung die <strong><a href="http://www.longbeardbrothers.at">Longbeard Brothers</a></strong>.</p>
-		<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d86458.98161295957!2d16.24605457344111!3d47.375979218981584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x476e8ef134447cdd%3A0xbe8283756a4a8e1a!2sEvangelische%20Pfarrgemeinde%20A.B.%20-%20Obersch%C3%BCtzen%2C%20Gottlieb-August-Wimmer-Platz%205%2C%207432%20Obersch%C3%BCtzen!3m2!1d47.3495504!2d16.2077974!4m5!1s0x476e9985c621d3c3%3A0x35247dbc37b2791b!2sBurgtaverne%20Burg%20Lockenhaus%2C%20G%C3%BCnserstra%C3%9Fe%2C%20Lockenhaus!3m2!1d47.4037235!2d16.4244485!5e0!3m2!1sde!2sat!4v1586958654767!5m2!1sde!2sat" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+		<p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d86458.98161295957!2d16.24605457344111!3d47.375979218981584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x476e8ef134447cdd%3A0xbe8283756a4a8e1a!2sEvangelische%20Pfarrgemeinde%20A.B.%20-%20Obersch%C3%BCtzen%2C%20Gottlieb-August-Wimmer-Platz%205%2C%207432%20Obersch%C3%BCtzen!3m2!1d47.3495504!2d16.2077974!4m5!1s0x476e9985c621d3c3%3A0x35247dbc37b2791b!2sBurgtaverne%20Burg%20Lockenhaus%2C%20G%C3%BCnserstra%C3%9Fe%2C%20Lockenhaus!3m2!1d47.4037235!2d16.4244485!5e0!3m2!1sde!2sat!4v1586958654767!5m2!1sde!2sat" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
 		<h2>N&auml;chtigungsm&ouml;glichkeiten</h2>
 			<p>&Uuml;bernachten kannst Du nat&uuml;rlich im Burghotel der Burg Lockenhaus. Sofern es Dir dort gefallen sollte,
 			k&uuml;mmere Dich bitte m&ouml;glichst bald selbst um eine Buchung. <br />
 			Alternativ k&ouml;nnen natürlich im Umkreis von Lockenhaus Quartiere bezogen werden, hierzu k&ouml;nnen wir aber 
 			keine Empfehlungen abgeben.</p>
+
+			<script>
+				// Open the Modal
+				function openModal() {
+				  document.getElementById("myModal").style.display = "block";
+				}
+				
+				// Close the Modal
+				function closeModal() {
+				  document.getElementById("myModal").style.display = "none";
+				}
+				
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				// Next/previous controls
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				// Thumbnail image controls
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("demo");
+				  var captionText = document.getElementById("caption");
+				  if (n > slides.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " active";
+				  captionText.innerHTML = dots[slideIndex-1].alt;
+				}
+				</script>
 		<!-- Images used to open the lightbox -->
 <div class="row">
 	<div class="column">
-	  <img src="media/sepslider1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	  <img src="media/sepslider3.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
 	</div>
 	<div class="column">
-	  <img src="media/sepslider2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	  <img src="media/sepslider3.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
 	</div>
 	<div class="column">
 	  <img src="media/sepslider3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
 	</div>
 	<div class="column">
-	  <img src="media/sepslider4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	  <img src="media/sepslider3.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
 	</div>
   </div>
   
@@ -52,22 +95,22 @@
   
 	  <div class="mySlides">
 		<div class="numbertext">1 / 4</div>
-		<img src="media/sepslider1 _wide.png" style="width:100%">
+		<img src="media/slide1_wide.jpg" style="width:100%">
 	  </div>
   
 	  <div class="mySlides">
 		<div class="numbertext">2 / 4</div>
-		<img src="media/sepslider2_wide.png" style="width:100%">
+		<img src="media/slide2_wide.jpg" style="width:100%">
 	  </div>
   
 	  <div class="mySlides">
 		<div class="numbertext">3 / 4</div>
-		<img src="media/sepslider3_wide.png" style="width:100%">
+		<img src="media/slide3_wide.jpg" style="width:100%">
 	  </div>
   
 	  <div class="mySlides">
 		<div class="numbertext">4 / 4</div>
-		<img src="media/sepslider4_wide.png" style="width:100%">
+		<img src="media/slide4_wide.jpg" style="width:100%">
 	  </div>
   
 	  <!-- Next/previous controls -->
@@ -81,11 +124,11 @@
   
 	  <!-- Thumbnail image controls -->
 	  <div class="column">
-		<img class="demo" src="media/sepslider1.png" onclick="currentSlide(1)" alt="Sarah">
+		<img class="demo" src="media/sepslider3.png" onclick="currentSlide(1)" alt="Sarah">
 	  </div>
   
 	  <div class="column">
-		<img class="demo" src="media/sepslider2.png" onclick="currentSlide(2)" alt="Cheers">
+		<img class="demo" src="media/sepslider3.png" onclick="currentSlide(2)" alt="Cheers">
 	  </div>
   
 	  <div class="column">
@@ -93,7 +136,7 @@
 	  </div>
   
 	  <div class="column">
-		<img class="demo" src="media/sepslider4.png" onclick="currentSlide(4)" alt="Lovis">
+		<img class="demo" src="media/sepslider3.png" onclick="currentSlide(4)" alt="Lovis">
 	  </div>
 	</div>
   </div>
