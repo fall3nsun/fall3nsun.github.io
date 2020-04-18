@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sarah und Patrick heiraten</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
 	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Lora&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
@@ -29,10 +29,78 @@
 			k&uuml;mmere Dich bitte m&ouml;glichst bald selbst um eine Buchung. <br />
 			Alternativ k&ouml;nnen natürlich im Umkreis von Lockenhaus Quartiere bezogen werden, hierzu k&ouml;nnen wir aber 
 			keine Empfehlungen abgeben.</p>
+		<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="media/sepslider1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="media/sepslider2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="media/sepslider3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="media/sepslider4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="media/sepslider1.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="media/sepslider2.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="media/sepslider3.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="media/sepslider4.png" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="media/sepslider1.png" onclick="currentSlide(1)" alt="Sarah">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="media/sepslider2.png" onclick="currentSlide(2)" alt="Cheers">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="media/sepslider3.png" onclick="currentSlide(3)" alt="Haendchen">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="media/sepslider4.png" onclick="currentSlide(4)" alt="Lovis">
+	  </div>
+	</div>
+  </div>
 		<h2>Kontakt</h2>
 		<div id="kontakt">
-			<img src="sarah.png" id="avatar" alt="Sarah">&nbsp;&nbsp;  
-			<img src="patrick.png" id="avatar" alt="Patrick"><br />
+			<img src="media/sarah.png" id="avatar" alt="Sarah">&nbsp;&nbsp;  
+			<img src="media/patrick.png" id="avatar" alt="Patrick"><br />
 			<svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg>‭&nbsp;+43 664 4164226‬&nbsp;|&nbsp;
 			<svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg>&nbsp;+43 660 4800136<br />
 			<svg class="lnr lnr-envelope"><use xlink:href="#lnr-envelope"></use></svg>&nbsp;<a href="mailto:hallo@eigner-pausz.me">hallo@eigner-pausz.me</a>
